@@ -4,14 +4,10 @@ Dynamically builds Graphs from
 input Text. 
 This is the Main function.
 
-Based on the 'Arrows' library:
-https://github.com/apcj/arrows
-
 	----------------
 Copyright Nulli - 2017
-Proprietary and Confidential
 
-author: ababeanu@nulli.com
+author: alex@nulli.com
 version: 1.0
 since: Oct. 2017
 *******************************/
