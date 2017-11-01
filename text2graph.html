@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script type="text/javascript" src="lib/d3.v3.js" charset="UTF-8"></script>
+  <script type="text/javascript" src="lib/graph-diagram.js"></script>
+  <link rel="stylesheet" href="style/graph-diagram.css" type="text/css">
+  <link rel="stylesheet" href="style/graph-style-bootstrap.css" type="text/css">
+  <link rel="stylesheet" href="lib/bootstrap.css" type="text/css">
+  <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+  <!-- Graph Generation Script -->
+  <script type="text/javascript" src="script/genGraph.js"></script>
+  
+  <title>Test to Graph diagram</title>
+</head>
+
+<body>
+<!--img src="img/nulli-logo.svg" alt="Nulli" width="166" height="200"-->
+<img src="img/nulli-logo.svg" alt="Nulli" style="float:left;width:166px;height:200px;">
+
+<div class="container">
+  <h1>Graph diagram Generator</h1>
+  <br><br>
+  <form onsubmit="graphIt(document.getElementById('inputText').value); return false;" id="textForm">
+    <textarea rows="10" cols="300" form="textForm" id="inputText">Enter text here...</textarea>
+    <br>
+    <button>Generate Graph</button>
+  </form>
+</div>
+
+<div class="container">
+  <h2>Generated Graph :</h2>
+  <div id="dynamicGraphDiv">
+     <p id="dynamicGraph"></p>
+  </div>
+</div>
+<br>
+<hr>
+<div class="container">
+  <h2>Example :</h2>
+  <h5>Input Text: </h5>
+  Jenny - "mail": "jenny@example.com", "phone": "604.111.2233"<br>
+  Jenny is friends with Bob - "Since": "01/01/01"<br>
+  Jenny works for Nulli<br>
+  Bob works for Nulli<br>
+  <br>
+  <h5>Generated Graph:</h5>
+  <br>
+  <figure class='graph-diagram'>
+    <ul class="graph-diagram-markup">
+      <li class="node" data-node-id="0" data-x="0" data-y="0">
+        <span class="caption">Jenny</span>
+        <dl class="properties">
+          <dt>mail</dt>
+          <dd>jenny@example.com</dd>
+          <dt>phone</dt>
+          <dd>604/111-2233</dd>
+        </dl>
+      </li>
+      <li class="node" data-node-id="1" data-x="-120" data-y="120">
+        <span class="caption">Bob</span>
+      </li>
+      <li class="node" data-node-id="2" data-x="120" data-y="120">
+        <span class="caption">Nulli</span>
+      </li>
+      <li class="relationship" data-from="0" data-to="1">
+        <span class="type">is friends with</span>
+        <dl class="properties">
+          <dt>Since</dt>
+          <dd>01/01/01</dd>
+        </dl>
+      </li>
+      <li class="relationship" data-from="0" data-to="2">
+        <span class="type">works for</span>
+      </li>
+      <li class="relationship" data-from="1" data-to="2">
+        <span class="type">works for</span>
+      </li>
+    </ul>
+  </figure>
+</div>
+
+<script type="text/javascript">
+  d3.selectAll( "figure.graph-diagram" )
+          .call( gd.figure() );
+</script>
+
+</body>
+</html>
