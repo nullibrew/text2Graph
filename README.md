@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Arrows - graph diagram library
 
 JavaScript library for drawing diagrams of small graphs, using [D3](http://d3js.org/) to generate SVG. 
@@ -50,3 +51,7 @@ This whole repository is hosted by GitHub Pages, so you'll find the editor hoste
 Yes, lots. Consider the current version experimental at best. 
 There hasn't been any work on browser compatibility, 
 so I'd be surprised if it works properly outside WebKit.
+=======
+# text2Graph
+Natural Language conversion to Graph utility
+>>>>>>> 595a5e18150ad6c48584855a496149f83dcde6f6
