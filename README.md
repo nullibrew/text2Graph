@@ -1,6 +1,6 @@
 # Text To Graph
 
-An HTML/Javascript utility that converts simle sentences into Graph diagrams. The goal is to quickly and easily create Graph diagrams for presentations or high-level design.
+An HTML/Javascript utility that converts simple sentences into Graph diagrams. The goal is to quickly and easily create Graph diagrams for presentations or high-level design.
 
 This utility is built on top of the [Arrows Library](https://github.com/apcj/arrows).
 
@@ -23,7 +23,7 @@ You can also add properties to the Graph Nodes and Vertices, using a `-` delimit
 
 ## Limitations
 
-The algorithm for placing nodes is not all that clever (yet), playing with the sentences, and their order may help if proper positioning of the Nodes. There is also a limit to the number of nodes that can be drawn. Think of only drawing 1 node of each type to keep things high-level/clear.
+The algorithm for placing nodes is not all that clever (yet), playing with the sentences, and their order may help in proper positioning of the Nodes. There is also a limit to the number of nodes that can be drawn. Think of only drawing 1 node of each type to keep things high-level/clear.
 
 ## Contact
 alex@nulli.com
