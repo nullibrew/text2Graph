@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # Text To Graph
 
 An HTML/Javascript utility that converts simle sentences into Graph diagrams. The goal is to quickly and easily create Graph diagrams for presentations or high-level design.
@@ -13,6 +12,8 @@ Simply download all files and open-up the `text2graph.html` file with a Browser.
 
 Just type-in simple sentences, such as:
 >Jenny is friends with Bob
+
+or
 >Bob works for Nulli
 
 You can also add properties to the Graph Nodes and Vertices, using a `-` delimiter. Example:
@@ -20,10 +21,14 @@ You can also add properties to the Graph Nodes and Vertices, using a `-` delimit
 
 **Note**: the quotes (`"`)are important in the properties.
 
-## Limitations?
+## Limitations
 
 The algorithm for placing nodes is not all that clever (yet), playing with the sentences, and their order may help if proper positioning of the Nodes. There is also a limit to the number of nodes that can be drawn. Think of only drawing 1 node of each type to keep things high-level/clear.
+
+## Contact
+alex@nulli.com
+
 =======
 # text2Graph
 Natural Language conversion to Graph utility
->>>>>>> 595a5e18150ad6c48584855a496149f83dcde6f6
+
