@@ -20,10 +20,10 @@ function graphIt (text) {
 	// Can change these:
 	//------------------
 	// Node Offset (drives spacing of nodes)
-	offset = document.getElementById('offset').value;
+	offset = Number(document.getElementById('offset').value);
 	// max Diagram coordinates
-	maxX = document.getElementById('maxWidth').value;
-	maxY = document.getElementById('maxHeight').value;
+	maxX = Number(document.getElementById('maxWidth').value);
+	maxY = Number(document.getElementById('maxHeight').value);
 	// Relationship Type Delimiter (e.g., "_" for "has_friend")
 	relDelim = document.getElementById('relD').value;
 	// Properties delimiter
