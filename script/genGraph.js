@@ -24,14 +24,14 @@ function graphIt (text) {
 	// Can change these:
 	//------------------
 	// Node Offset (drives spacing of nodes)
-	offset = 150;
+	offset = document.getElementById('offset').value;
 	// max Diagram coordinates
-	maxX = 500;
-	maxY = 500;
+	maxX = document.getElementById('maxWidth').value;
+	maxY = document.getElementById('maxHeight').value;
 	// Relationship Type Delimiter (e.g., "_" for "has_friend")
-	relDelim = "_";
+	relDelim = document.getElementById('relD').value;
 	// Properties delimiter
-	propDelim = "-";
+	propDelim = document.getElementById('propD').value;
 	//-------------------
 	// DO NOT change these:
 	//------------------

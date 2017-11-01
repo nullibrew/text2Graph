@@ -20,11 +20,32 @@
 <div class="container">
   <h1>Graph diagram Generator</h1>
   <br><br>
-  <form onsubmit="graphIt(document.getElementById('inputText').value); return false;" id="textForm">
-    <textarea rows="10" cols="300" form="textForm" id="inputText">Enter text here...</textarea>
-    <br>
-    <button>Generate Graph</button>
-  </form>
+  <table>
+    <tr>
+      <td>
+        <form onsubmit="graphIt(document.getElementById('inputText').value); return false;" id="textForm">
+          <textarea rows="10" cols="300" form="textForm" id="inputText">Enter text here...</textarea>
+          <br>
+          <button>Generate Graph</button>
+        </form>
+      </td>
+      <td>
+        <form>
+          Node Offset (Drives the distance between nodes):<br>
+          <input type="text" id="offset" value="150">
+          <br>
+          Max Canvas Width (pixels):<br>
+          <input type="text" id="maxWidth" value="500"><br>
+          Max Canvas Height (pixels):<br>
+          <input type="text" id="maxHeight" value=500><br>
+          Relationship Type Delimiter:<br>
+          <input type="text" id="relD" value="_"><br>
+          Properties Delimiter:<br>
+          <input type="text" id="propD" value="-">
+        </form>
+      </td>
+    </tr>
+  </table>
 </div>
 
 <div class="container">
